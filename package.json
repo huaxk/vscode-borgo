@@ -1,0 +1,41 @@
+{
+  "name": "vscode-borgo",
+  "displayName": "Borgo",
+  "description": "Borgo language support for Visual Studio Code",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.75.0",
+    "node": ">=12.0.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [
+      {
+        "id": "borgo",
+        "aliases": [
+          "Borgo",
+          "borgo"
+        ],
+        "extensions": [
+          ".brg"
+        ],
+        "configuration": "./language-configuration.json"
+      }
+    ],
+    "grammars": [
+      {
+        "language": "borgo",
+        "scopeName": "source.borgo",
+        "path": "./syntaxes/borgo.tmLanguage.json"
+      }
+    ]
+  },
+  "devDependencies": {
+    "gulp": "^5.0.0",
+    "gulp-yaml": "^2.0.4",
+    "js-yaml": "^4.1.0",
+    "vscode-tmgrammar-test": "^0.1.3"
+  }
+}
